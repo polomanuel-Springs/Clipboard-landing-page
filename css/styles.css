@@ -1,0 +1,359 @@
+:root {
+    --green: hsl(171, 66%, 44%);
+    --blue: hsl(233, 100%, 69%);
+    --gray-dark: hsl(210, 10%, 33%);
+    --gray-light: hsl(201, 11%, 66%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--gray-light);
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--gray-dark);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* HEADER */
+
+.container {
+    width: min(calc(100% - 2rem), 1110px);
+    margin-inline: auto;
+}
+
+.hero {
+    padding: 7.5rem 0 5rem;
+    background-image: url("../images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    text-align: center;
+}
+
+.hero_logo {
+    width: 7rem;
+    margin: 0 auto 4rem;
+}
+
+.hero h1 {
+    max-width: 43rem;
+    margin: 0 auto 1.25rem;
+    font-size: 2rem;
+}
+
+.hero_description {
+    max-width: 43rem;
+    margin: 0 auto 3rem;
+    font-size: 1rem;
+}
+
+.download-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.button {
+    width: min(100%, 320px);
+    padding: 0.75rem 2rem;
+    color: white;
+    border-radius: 100vw;
+    font-weight: 600;
+    line-height: 1.75;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button--ios {
+    background-color: var(--green);
+    box-shadow:
+        0 0.2rem hsl(171, 66%, 35%),
+        0 0.75rem 1.5rem hsl(171, 66%, 44%, 0.25);
+}
+
+.button--mac {
+    background-color: var(--blue);
+    box-shadow:
+        0 0.2rem hsl(233, 55%, 55%),
+        0 0.75rem 1.5rem hsl(233, 100%, 69%, 0.25);
+}
+
+/* MAIN */
+
+/* snippets SECTION */
+
+.snippets {
+    padding: 6rem 0 7rem;
+}
+
+.snippets h2 {
+    margin: 0 auto 1.25rem;
+    text-align: center;
+}
+
+.snippets_description {
+    margin: 0 auto 3rem;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.snippets_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    align-items: center;
+    gap: 2rem;
+}
+
+.snippets_grid img {
+    width: min(calc(100% - 2rem), 44rem);
+    justify-self: center;
+}
+
+.snippets_features {
+    width: min(100%, 44rem);
+    align-self: center;
+    padding-inline: 1.5rem;
+}
+
+/* access SECTION */
+
+.access {
+    padding: 6rem 0 7rem;
+    text-align: center;
+}
+
+.access_text {
+    text-align: center;
+}
+
+.access_text h2 {
+    margin: 0 0 1.25rem;
+    text-align: center;
+}
+
+.access_image {
+    width: min(100%, 44rem);
+    height: auto;
+    margin-inline: auto;
+}
+
+/* workflow SECTION */
+
+.workflow {
+    padding: 6rem 0 7rem;
+    text-align: center;
+}
+
+.workflow>h2 {
+    max-width: 43rem;
+    margin: 0 auto 1.25rem;
+    padding-inline: 1rem;
+}
+
+.workflow>p {
+    max-width: 43rem;
+    margin: 0 auto;
+    padding-inline: 1.5rem;
+}
+
+.workflow_features {
+    width: min(calc(100% - 2rem), 44rem);
+    margin: 5rem auto 0;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem 2rem;
+}
+
+.workflow_feature {
+    display: grid;
+    justify-items: center;
+    align-content: start;
+}
+
+.workflow_icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0 2rem;
+    object-fit: contain;
+}
+
+.workflow_feature h3 {
+    margin: 0 0 1rem;
+}
+
+.workflow_feature p {
+    max-width: 22rem;
+    margin: 0;
+}
+
+/* companies SECTION */
+
+.companies {
+    padding: 5rem 0;
+}
+
+.companies_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.companies_list img {
+    width: auto;
+    max-width: 10rem;
+    max-height: 3.5rem;
+    object-fit: contain;
+}
+
+/* final download SECTION */
+
+.final_download {
+    padding: 6rem 0 10rem;
+    text-align: center;
+}
+
+.final_download h2 {
+    margin: 0 auto 1.25rem;
+    text-align: center;
+}
+
+.final_download p {
+    margin: 0 auto 3rem;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.final_download .download-actions {
+    margin-top: 3rem;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 3.5rem 0;
+    background-color: hsl(220, 18%, 97%);
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.footer_logo img {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+}
+
+.footer_navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.footer_navigation a {
+    color: var(--gray-dark);
+    text-decoration: none;
+    transition: color 180ms ease;
+}
+
+.footer_social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.footer_social a {
+    display: inline-flex;
+    transition: transform 180ms ease;
+}
+
+.footer_social img {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+}
+
+/* MEDIA QUERYS */
+
+@media (min-width: 47rem) {
+    .hero {
+        background-image: url("../images/bg-header-desktop.png");
+    }
+
+    .download-actions {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .workflow_features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .companies {
+        padding: 8rem 0;
+    }
+
+    .companies_list {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .final_download {
+        padding: 7rem 0 10rem;
+    }
+
+    .footer_content {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 7rem;
+    }
+
+    .footer_navigation {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-auto-flow: column;
+        justify-content: start;
+        column-gap: 5rem;
+        row-gap: 0.75rem;
+        text-align: left;
+    }
+
+    .footer_social {
+        gap: 1.5rem;
+    }
+}
+
+@media (width < 512px) {
+    .snippet_feature {
+        text-align: center;
+    }
+}
