@@ -13,6 +13,8 @@ body {
     margin: 0;
     color: var(--gray-light);
     font-family: "Bai Jamjuree", sans-serif;
+
+    /* Converted to rem for unit consistency */
     font-size: 1.125rem;
     line-height: 1.65;
 }
@@ -33,6 +35,7 @@ img {
 /* HEADER */
 
 .container {
+    /* Converted to rem for unit consistency */
     width: min(calc(100% - 2rem), 62rem);
     margin-inline: auto;
 }
@@ -71,6 +74,7 @@ img {
 }
 
 .button {
+    /* Converted to rem for unit consistency */
     width: min(100%, 20rem);
     padding: 0.75rem 2rem;
     color: white;
@@ -80,6 +84,8 @@ img {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+
+    /* New transitions */
     transition:
         opacity 180ms ease,
         transform 180ms ease;
@@ -114,6 +120,7 @@ img {
 }
 
 .snippets_description {
+    /* Adjusting it to look like the expected result */
     max-width: 43rem;
     margin: 0 auto 3rem;
     padding-inline: 2rem;
@@ -130,6 +137,7 @@ img {
 }
 
 .snippets_grid img {
+    /* Converted to rem for unit consistency */
     width: min(calc(100% - 2rem), 44rem);
     justify-self: center;
 }
@@ -139,6 +147,8 @@ img {
     align-self: center;
     padding-inline: 3rem;
 }
+
+/* Movile first logic and patches*/
 
 .snippet_feature {
     text-align: center;
@@ -324,6 +334,8 @@ img {
     width: 1.5rem;
     height: 1.5rem;
     object-fit: contain;
+
+    /* The social icon color is animated using filter */
     transition: filter 180ms ease;
 }
 
@@ -331,11 +343,14 @@ img {
 
 /* Animations */
 
+/* Added the required hover state for download buttons */
+
 .button:hover {
     opacity: 0.8;
     transform: translateY(-0.125rem);
 }
 
+/* Added accessible keyboard focus styles */
 .button--ios:focus-visible {
     outline: none;
 
@@ -345,6 +360,8 @@ img {
         0 0.2rem hsl(171, 66%, 35%),
         0 0.75rem 1.5rem hsl(171, 66%, 44%, 0.25);
 }
+
+/* Added accessible keyboard focus styles */
 .button--mac:focus-visible {
     outline: none;
 
@@ -355,11 +372,13 @@ img {
         0 0.75rem 1.5rem hsl(233, 100%, 69%, 0.25);
 }
 
+/* Footer navigation now changes color on hover and keyboard focus */
 .footer_navigation a:hover,
 .footer_navigation a:focus-visible {
     color: var(--green);
 }
 
+/* Replaced the browser's default blue focus indicator with the project's green color */
 .footer_navigation a:focus-visible,
 .footer_social a:focus-visible,
 .footer_logo:focus-visible {
@@ -367,6 +386,7 @@ img {
     outline-offset: 0.25rem;
 }
 
+/* Logos SVG files are loaded as images, so filter is used to visually change them to the project green color */
 .footer_social a:hover img,
 .footer_social a:focus-visible img {
     filter:
@@ -382,6 +402,8 @@ img {
 
 
 /* MEDIA QUERYS */
+
+/*  All responsive rules use min-width to keep the project consistently mobile-first */
 
 @media (min-width: 47rem) {
 

@@ -6,25 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Clipboard landing page</title>
-    <meta name="description"
-        content="A front-end training project recreating a responsive Clipboard landing page using semantic HTML and modern CSS.">
-    <meta name="author" content="Manuel Polo Mesa - Optimum Partners">
 
+    <meta
+        name="description"
+        content="A front-end training project recreating a responsive Clipboard landing page using semantic HTML and modern CSS."
+    >
 
+    <meta
+        name="author"
+        content="Manuel Polo Mesa - Optimum Partners"
+    >
+
+    <!-- Preconnect improves the initial connection to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
+    <!-- Added the actual Bai Jamjuree stylesheet.
+         Preconnect alone does not load the font. -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- External CSS file -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+
     <header class="hero">
         <div class="container">
-            <img src="images/ilustrations/favicon-32x32 3.png" alt="Clipboard logo" class="hero_logo">
 
-            <h1 class="one two">A history of everything you copy</h1>
+            <!-- Images were reorganized into folders by purpose -->
+            <img
+                src="images/illustrations/favicon-32x32 3.png"
+                alt="Clipboard logo"
+                class="hero_logo"
+            >
+
+            <!-- Removed unused classes from the H1 -->
+            <h1>A history of everything you copy</h1>
 
             <p class="hero_description">
                 Clipboard allows you to track and organize everything you copy.
@@ -32,36 +58,53 @@
             </p>
 
             <div class="download-actions">
-                <a class="button button--ios" href="#">Download for iOS</a>
-                <a class="button button--mac" href="#">Download for Mac</a>
+                <a class="button button--ios" href="#">
+                    Download for iOS
+                </a>
+
+                <a class="button button--mac" href="#">
+                    Download for Mac
+                </a>
             </div>
+
         </div>
     </header>
 
+
     <main>
+
         <section class="snippets">
+
             <h2>Keep track of your snippets</h2>
 
             <p class="snippets_description">
-                Clipboard instantly stores any item you copy in the cloud, meaning
-                you can access your snippets immediately on all your devices.
+                Clipboard instantly stores any item you copy in the cloud,
+                meaning you can access your snippets immediately on all your devices.
                 Our Mac and iOS apps will help you organize everything.
             </p>
 
             <div class="snippets_grid">
-                <img src="images/ilustrations/image-computer.png" alt="Computer with Clipboard app">
+
+                <!-- Illustration path updated after reorganizing the images folder -->
+                <img
+                    src="images/illustrations/image-computer.png"
+                    alt="Computer with Clipboard app"
+                >
 
                 <div class="snippets_features">
+
                     <article class="snippet_feature">
                         <h3>Quick Search</h3>
+
                         <p>
-                            Easily search your snippets by content, category, web address,
-                            application, and more.
+                            Easily search your snippets by content, category,
+                            web address, application, and more.
                         </p>
                     </article>
 
                     <article class="snippet_feature">
                         <h3>iCloud Sync</h3>
+
                         <p>
                             Instantly saves and syncs snippets across all your devices.
                         </p>
@@ -69,39 +112,62 @@
 
                     <article class="snippet_feature">
                         <h3>Complete History</h3>
+
                         <p>
-                            Retrieve any snippets from the first moment you started using the app.
+                            Retrieve any snippets from the first moment
+                            you started using the app.
                         </p>
                     </article>
+
                 </div>
             </div>
+
         </section>
+
 
         <section class="access">
             <div class="container">
+
+                <!-- Removed the unused access_content class -->
                 <div class="access_text">
+
                     <h2>Access Clipboard anywhere</h2>
 
                     <p>
-                        Whether you’re on the go, or at your computer, you can access
-                        all your Clipboard snippets in a few simple clicks.
+                        Whether you’re on the go, or at your computer,
+                        you can access all your Clipboard snippets
+                        in a few simple clicks.
                     </p>
+
                 </div>
 
-                <img class="access_image" src="images/ilustrations/image-devices.png"
-                    alt="Clipboard app displayed on a phone and tablet">
+                <img
+                    class="access_image"
+                    src="images/illustrations/image-devices.png"
+                    alt="Clipboard app displayed on a phone and tablet"
+                >
+
             </div>
         </section>
 
+
         <section class="workflow">
+
             <h2>Supercharge your workflow</h2>
+
             <p>
                 We’ve got the tools to boost your productivity.
             </p>
 
             <div class="workflow_features">
+
                 <article class="workflow_feature">
-                    <img class="workflow_icon" src="images/icons/newspaper-outline.svg" alt="Document icon">
+
+                    <img
+                        class="workflow_icon"
+                        src="images/icons/newspaper-outline.svg"
+                        alt="Document icon"
+                    >
 
                     <h3>Create blacklists</h3>
 
@@ -109,51 +175,80 @@
                         Ensure sensitive information never makes its way to your
                         clipboard by excluding certain sources.
                     </p>
+
                 </article>
 
+
                 <article class="workflow_feature">
-                    <img class="workflow_icon" src="images/icons/text-outline.svg" alt="Plain text formatting icon">
+
+                    <img
+                        class="workflow_icon"
+                        src="images/icons/text-outline.svg"
+                        alt="Plain text formatting icon"
+                    >
 
                     <h3>Plain text snippets</h3>
 
                     <p>
-                        Remove unwanted formatting from copied text for a consistent look.
+                        Remove unwanted formatting from copied text
+                        for a consistent look.
                     </p>
+
                 </article>
 
+
                 <article class="workflow_feature">
-                    <img class="workflow_icon" src="images/icons/eye-outline.svg" alt="Preview icon">
+
+                    <img
+                        class="workflow_icon"
+                        src="images/icons/eye-outline.svg"
+                        alt="Preview icon"
+                    >
 
                     <h3>Sneak preview</h3>
 
                     <p>
-                        Quick preview of all snippets on your Clipboard for easy access.
+                        Quick preview of all snippets on your Clipboard
+                        for easy access.
                     </p>
+
                 </article>
+
             </div>
         </section>
 
-        <section class="companies" aria-label="Companies using Clipboard">
+
+        <section
+            class="companies"
+            aria-label="Companies using Clipboard"
+        >
+
             <div class="container companies_list">
+
+                <!-- Company logos were moved into the logos folder -->
                 <img src="images/logos/logo-google.png" alt="Google">
                 <img src="images/logos/logo-ibm.png" alt="IBM">
                 <img src="images/logos/logo-microsoft.png" alt="Microsoft">
                 <img src="images/logos/logo-hp.png" alt="Hewlett Packard Enterprise">
                 <img src="images/logos/logo-vector-graphics.png" alt="Vector Graphics">
+
             </div>
         </section>
 
+
         <section class="final_download">
             <div class="container">
+
                 <h2>Clipboard for iOS and Mac OS</h2>
 
                 <p>
-                    Available for free on the App Store. Download for Mac or iOS,
-                    sync with iCloud and you’re ready to start adding to your
-                    clipboard.
+                    Available for free on the App Store.
+                    Download for Mac or iOS, sync with iCloud
+                    and you’re ready to start adding to your clipboard.
                 </p>
 
                 <div class="download-actions">
+
                     <a class="button button--ios" href="#">
                         Download for iOS
                     </a>
@@ -161,18 +256,36 @@
                     <a class="button button--mac" href="#">
                         Download for Mac
                     </a>
+
                 </div>
+
             </div>
         </section>
+
     </main>
 
+
+    <!-- Confirmed that main closes only once before the footer -->
     <footer class="footer">
+
         <div class="container footer_content">
-            <a class="footer_logo" href="#" aria-label="Clipboard home">
-                <img src="images/ilustrations/favicon-32x32 3.png" alt="Clipboard logo">
+
+            <a
+                class="footer_logo"
+                href="#"
+                aria-label="Clipboard home"
+            >
+                <img
+                    src="images/illustrations/favicon-32x32 3.png"
+                    alt=""
+                >
             </a>
 
-            <nav class="footer_navigation" aria-label="Footer navigation">
+
+            <nav
+                class="footer_navigation"
+                aria-label="Footer navigation"
+            >
                 <a href="#">FAQs</a>
                 <a href="#">Contact Us</a>
                 <a href="#">Privacy Policy</a>
@@ -180,21 +293,45 @@
                 <a href="#">Install Guide</a>
             </nav>
 
+
             <div class="footer_social">
-                <a href="#" aria-label="Visit Clipboard on Facebook">
-                    <img src="images/logos/logo-facebook.svg" alt="Facebook logo">
+
+                <!-- Social links already have aria-labels, so the icon images can use empty alt text -->
+                <a
+                    href="#"
+                    aria-label="Visit Clipboard on Facebook"
+                >
+                    <img
+                        src="images/logos/logo-facebook.svg"
+                        alt=""
+                    >
                 </a>
 
-                <a href="#" aria-label="Visit Clipboard on Twitter">
-                    <img src="images/logos/logo-twitter.svg" alt="Twitter logo">
+                <a
+                    href="#"
+                    aria-label="Visit Clipboard on Twitter"
+                >
+                    <img
+                        src="images/logos/logo-twitter.svg"
+                        alt=""
+                    >
                 </a>
 
-                <a href="#" aria-label="Visit Clipboard on Instagram">
-                    <img src="images/logos/logo-instagram.svg" alt="Instagram logo">
+                <a
+                    href="#"
+                    aria-label="Visit Clipboard on Instagram"
+                >
+                    <img
+                        src="images/logos/logo-instagram.svg"
+                        alt=""
+                    >
                 </a>
+
             </div>
-        </div>
-    </footer>
-</body>
 
+        </div>
+
+    </footer>
+
+</body>
 </html>
